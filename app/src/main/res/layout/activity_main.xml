@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/poleTekstowe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poleTekstowe1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/przycisk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="przycisk1"
+        android:text="@string/przycisk1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe1" />
+
+    <TextView
+        android:id="@+id/poleTekstowe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poleTekstowe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przycisk1" />
+
+    <Button
+        android:id="@+id/przycisk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="przycisk2"
+        android:text="@string/przycisk2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe2" />
+
+    <ProgressBar
+        android:id="@+id/pasekPostepu"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przycisk2" />
+
+    <TextView
+        android:id="@+id/poleTekstowe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/poleTekstowe3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <TextView
+        android:id="@+id/poleTekstowe4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/poleTekstowe4"
+        app:layout_constraintStart_toEndOf="@+id/poleTekstowe3"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <TextView
+        android:id="@+id/poleEdycyjne1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/poleEdycyjne1"
+        app:layout_constraintStart_toEndOf="@+id/poleTekstowe3"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <TextView
+        android:id="@+id/poleEdycyjne2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/poleEdycyjne2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/poleTekstowe4"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <Button
+        android:id="@+id/przycisk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="przycisk3"
+        android:text="@string/przycisk3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe3" />
+
+    <Button
+        android:id="@+id/przycisk4"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:onClick="przycisk4"
+        android:text="@string/przycisk4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toEndOf="@+id/przycisk3"
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
